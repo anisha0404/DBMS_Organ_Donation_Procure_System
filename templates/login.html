@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<html>
+	<head>
+		<title>Login Page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+   <style>
+        body {
+            background-image: url('/static/loginbg.png'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center top; /* Shifting background towards top */
+            background-repeat: no-repeat;
+            color: #fff; /* Text color */
+        }
+        .jumbotron {
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px; /* Rounded corners */
+        }
+        .form-group label {
+            color: #fff; /* Label text color */
+        }
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for input fields */
+            color: #000; /* Input text color */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue button */
+            border-color: #007bff; /* Blue border */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3; /* Darker blue border on hover */
+        }
+    </style>
+	</head>
+	<body>
+		<div class="jumbotron">
+					<center><h1 class="display-4">Organ Donation and Procurement Management System</h1></center>
+		</div>
+		<form class="container" action = "/login" method = "POST">
+				<div class="form-group">
+					<label>Username1</label>
+					<input name = "username" type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input name = "password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</body>
+</html>
