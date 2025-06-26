@@ -65,3 +65,62 @@ This is a DBMS-based web application developed using **Flask** and **MySQL**, de
 - Python libraries:
   ```bash
   pip install flask mysql-connector-python matplotlib
+
+🔧 Setup Instructions
+
+📥 Clone this repository
+```bash
+git clone https://github.com/your-username/dbms-project.git
+cd dbms-project
+
+Create virtual environment:
+bash
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate
+
+Install dependencies:
+bash
+Copy
+Edit
+pip install -r requirements.txt
+
+🗄️ Set up the MySQL database
+Open MySQL Workbench
+
+Run the full SQL script to create the DBMS_PROJECT schema and tables
+
+🗄️Default admin login is already inserted:
+sql
+Copy
+Edit
+INSERT INTO login VALUES ('admin','admin');
+
+▶️Run the Flask app
+bash
+Copy
+Edit
+python main.py
+
+🌐 Open in your browser
+text
+Copy
+Edit
+http://127.0.0.1:5000/
+
+📊 Future Improvements
+Role-based registration portal (Donor, Hospital)
+
+Analytics dashboard with organ availability stats
+
+Automatic organ matching suggestions
+
+Secure password encryption (using SHA-256 or bcrypt)
+
+REST API endpoints for integration with hospital systems
+
+🙌 Developed By
+Anisha Mehta
+Computer Science Undergraduate
+DBMS Mini Project — Organ Donation System
