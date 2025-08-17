@@ -111,7 +111,7 @@ pip install flask mysql-connector-python matplotlib
 
 📥 Clone this repository
 
-git clone https://github.com/your-username/dbms-project.git
+git clone https://github.com/anisha0404/dbms-project.git
 cd dbms-project
 
 🧱 Create virtual environment
